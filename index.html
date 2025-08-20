@@ -1,92 +1,169 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!doctype html>
+<html lang="fr-CA" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bolduc Sécur-TI</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bolduc Sécur‑TI — Informatique simple & proche</title>
+  <meta name="description" content="Dépannage, Wi‑Fi, sécurité de base et sauvegardes pour tous. Explications simples. Service à Trois‑Rivières et régions." />
+  <meta property="og:title" content="Bolduc Sécur‑TI — Informatique simple & proche" />
+  <meta property="og:description" content="On s'occupe de votre informatique. Sans jargon, avec le sourire." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jonass696969.github.io/Joe/" />
+  <meta property="og:image" content="https://jonass696969.github.io/Joe/og-1200x630-bolduc-securti.png" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="./bolduc-securti-favicon-512.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { brand: {50:'#ecfeff',100:'#cffafe',200:'#a5f3fc',300:'#67e8f9',400:'#22d3ee',500:'#06b6d4',600:'#0891b2',700:'#0e7490',800:'#155e75',900:'#164e63',950:'#083344'} } } } } };
+  </script>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #2b3e50;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background: #1e2a38;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      background: #fff;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    footer {
-      background-color: #2b3e50;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    h2 {
-      color: #2b3e50;
-    }
+    a { text-decoration-thickness: .08em; text-underline-offset: .2em }
+    :focus-visible { outline: 3px solid #06b6d4; outline-offset: 2px }
+    .btn { display:inline-block; border-radius:9999px; padding:.75rem 1rem; font-weight:700 }
+    .btn-primary{ background:#06b6d4; color:#fff }
+    .btn-primary:hover{ background:#0891b2 }
+    .btn-ghost{ border:2px solid #0ea5e9; color:#0ea5e9 }
+    .btn-ghost:hover{ background:#ecfeff }
+    @media (prefers-reduced-motion: reduce){ *{ animation:none!important; transition:none!important } }
+    .container{ max-width:80rem; margin-inline:auto; padding-inline:1rem }
+    .card{ border:1px solid rgb(226 232 240); border-radius:1rem; padding:1rem; background:#fff }
+    .icon{ width:28px; height:28px }
   </style>
 </head>
-<body>
-  <header>
-    <h1>Bolduc Sécur-TI</h1>
-    <p>Solutions informatiques simples, sécurisées et humaines</p>
+<body class="bg-slate-50 text-slate-900 text-lg">
+  <a href="#contenu" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 bg-white text-slate-900 px-3 py-2 rounded">Aller au contenu</a>
+
+  <header class="bg-white/90 border-b border-slate-200">
+    <div class="container flex h-14 items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="./assets/icons/icon-cybersecurite.png" alt="Logo" class="h-7 w-7" />
+        <strong>Bolduc Sécur‑TI</strong>
+      </div>
+      <nav aria-label="Navigation principale" class="hidden md:flex gap-6 text-base">
+        <a href="#services">Services</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="flex gap-2">
+        <a href="tel:+18190000000" class="btn btn-ghost" aria-label="Appeler Bolduc Sécur‑TI">Appeler</a>
+        <a href="#contact" class="btn btn-primary" aria-label="Écrire un message">Écrire</a>
+      </div>
+    </div>
   </header>
 
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#a-propos">A propos</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <div class="container">
-    <section id="services">
-      <h2>Nos services</h2>
-      <ul>
-        <li><strong>Clé USB TI Clé en main</strong> : Scripts, logiciels portables, PDF explicatifs, menu interactif</li>
-        <li><strong>Procédures personnalisées</strong> : Guides sur mesure pour vos logiciels, sauvegardes, sécurité</li>
-        <li><strong>Mini-audit cybersécurité</strong> : Analyse de base de votre poste, antivirus, Wi-Fi, sauvegarde</li>
-      </ul>
+  <main id="contenu">
+    <section class="bg-gradient-to-b from-brand-950 via-slate-900 to-slate-950 text-white">
+      <div class="container py-16 md:py-20">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight max-w-3xl">Informatique <span class="text-brand-300">simple</span>, <span class="text-brand-300">sécuritaire</span> et <span class="text-brand-300">proche</span>.</h1>
+        <p class="mt-4 max-w-2xl">On s’occupe de votre Wi‑Fi, de vos sauvegardes et des petites pannes qui vous bloquent. <strong>Sans jargon</strong>, avec des explications claires.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="tel:+18190000000" class="btn btn-primary" aria-label="Appeler maintenant">📞 Appeler maintenant</a>
+          <a href="mailto:contact@bolduc-securti.ca" class="btn btn-ghost" aria-label="Écrire un courriel">✉️ Écrire un courriel</a>
+        </div>
+        <ul class="mt-6 grid gap-2 text-base text-slate-200 md:grid-cols-3">
+          <li>✔️ Dépannage à distance ou sur place</li>
+          <li>✔️ Sécurité de base incluse</li>
+          <li>✔️ Sauvegardes testées</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="a-propos">
-      <h2>À propos</h2>
-      <p>Bolduc Sécur-TI est né du besoin d'offrir un service TI clair, humain et efficace aux PME, travailleurs autonomes et particuliers. Avec de l'expérience dans le réseau de la santé (CIUSSS), Jo Bolduc met son expertise au service des vrais besoins informatiques, sans flafla ni jargon inutile.</p>
+    <section class="container py-12">
+      <h2 class="text-3xl font-bold">Comment ça marche</h2>
+      <div class="mt-6 grid gap-4 md:grid-cols-3">
+        <div class="card"><strong>1. On s’écoute</strong><p class="mt-2">Vous nous dites le problème. Pas besoin de termes techniques.</p></div>
+        <div class="card"><strong>2. On passe à l’action</strong><p class="mt-2">À distance ou chez vous. On règle, on explique.</p></div>
+        <div class="card"><strong>3. C’est réglé</strong><p class="mt-2">Vous repartez avec des conseils simples pour éviter que ça revienne.</p></div>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Pour une demande de service ou une soumission :</p>
-      <ul>
-        <li><strong>Courriel</strong> : bolduc.securti@gmail.com</li>
-        <li><strong>Téléphone</strong> : 819-xxx-xxxx</li>
-      </ul>
+    <section id="services" class="container py-12 bg-white">
+      <h2 class="text-3xl font-bold">Services simples</h2>
+      <p class="mt-2 text-slate-700">Des bases solides pour être tranquille au quotidien.</p>
+      <div class="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <article class="card">
+          <div class="flex items-center gap-2"><img src="./assets/icons/icon-support.png" alt="Icône dépannage" class="icon"/><strong>Dépannage</strong></div>
+          <p class="mt-2">Ordinateurs lents, imprimantes, courriels, logiciels, Internet… On répare.</p>
+        </article>
+        <article class="card">
+          <div class="flex items-center gap-2"><img src="./assets/icons/icon-reseau-wifi.png" alt="Icône Wi‑Fi" class="icon"/><strong>Internet & Wi‑Fi</strong></div>
+          <p class="mt-2">Un Wi‑Fi qui porte loin, sans coupures. Invités séparés, contrôle parental au besoin.</p>
+        </article>
+        <article class="card">
+          <div class="flex items-center gap-2"><img src="./assets/icons/icon-cybersecurite.png" alt="Icône sécurité" class="icon"/><strong>Sécurité de base</strong></div>
+          <p class="mt-2">Antivirus, mises à jour, mots de passe forts, double vérification quand c’est utile.</p>
+        </article>
+        <article class="card">
+          <div class="flex items-center gap-2"><img src="./assets/icons/icon-backup321.png" alt="Icône sauvegardes" class="icon"/><strong>Sauvegardes</strong></div>
+          <p class="mt-2">Vos fichiers sont copiés automatiquement. On teste la restauration avec vous.</p>
+        </article>
+      </div>
     </section>
-  </div>
 
-  <footer>
-    <p>&copy; 2025 Bolduc Sécur-TI. Tous droits réservés.</p>
+    <section id="tarifs" class="bg-slate-100/70">
+      <div class="container py-12">
+        <h2 class="text-3xl font-bold">Tarifs clairs</h2>
+        <div class="mt-6 grid gap-4 md:grid-cols-2">
+          <div class="card">
+            <h3 class="text-2xl font-bold">Essentiel — 49 $/mois</h3>
+            <ul class="mt-2 space-y-1">
+              <li>• Sécurité de base</li>
+              <li>• Sauvegarde locale 1 poste</li>
+              <li>• 1 h de support à distance</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary mt-4" aria-label="Choisir le forfait Essentiel">Choisir</a>
+          </div>
+          <div class="card" style="border-color:#06b6d4">
+            <h3 class="text-2xl font-bold">Pro — 199 $/mois</h3>
+            <ul class="mt-2 space-y-1">
+              <li>• Suivi & mises à jour automatiques</li>
+              <li>• Sauvegarde 3‑2‑1 (local + nuage)</li>
+              <li>• 4 h de support / mois</li>
+              <li>• Mini‑audit trimestriel</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary mt-4" aria-label="Choisir le forfait Pro">Choisir</a>
+          </div>
+        </div>
+        <p class="mt-4 text-sm text-slate-600">Pas sûr ? On commence par un petit état des lieux, gratuit et sans engagement.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="container py-12">
+      <h2 class="text-3xl font-bold">Parlons‑nous</h2>
+      <p class="mt-2">Dites‑nous ce qu’il se passe. On vous répond vite.</p>
+      <div class="mt-4 flex flex-wrap gap-3">
+        <a href="tel:+18190000000" class="btn btn-primary" aria-label="Appeler Bolduc Sécur‑TI">📞 Appeler</a>
+        <a href="mailto:contact@bolduc-securti.ca" class="btn btn-ghost" aria-label="Écrire à Bolduc Sécur‑TI">✉️ Courriel</a>
+      </div>
+      <form class="mt-6 card" action="https://formspree.io/f/xyzzzzzz" method="POST" aria-label="Formulaire de contact">
+        <label class="block">Nom
+          <input name="nom" required class="mt-1 w-full rounded border border-slate-300 p-2" />
+        </label>
+        <label class="mt-3 block">Courriel
+          <input type="email" name="email" required class="mt-1 w-full rounded border border-slate-300 p-2" />
+        </label>
+        <label class="mt-3 block">Message
+          <textarea name="message" rows="4" required class="mt-1 w-full rounded border border-slate-300 p-2"></textarea>
+        </label>
+        <button class="btn btn-primary mt-4" type="submit">Envoyer</button>
+        <p class="mt-2 text-sm text-slate-600">En envoyant, vous acceptez notre politique de confidentialité.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 py-8 text-base">
+    <div class="container flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+      <p>© <span id="year"></span> Bolduc Sécur‑TI — Trois‑Rivières (QC)</p>
+      <nav class="flex gap-4">
+        <a href="./confidentialite.html">Confidentialité</a>
+        <a href="./conditions.html">Conditions</a>
+      </nav>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

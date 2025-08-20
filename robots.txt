@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jonass696969.github.io/Joe/sitemap.xml
